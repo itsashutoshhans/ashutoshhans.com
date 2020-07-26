@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article style={{padding: '1.5rem', maxWidth: '1200px', margin: '0 auto'}}>
+      <article style={{padding: '1.5rem', maxWidth: '1260px', margin: '0 auto'}}>
         <header>
           <h1
             style={{
@@ -43,12 +43,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <footer>
+        {/* <footer>
           <Bio />
-        </footer>
+        </footer> */}
       </article>
 
-      <nav>
+      <nav className="container" style={{margin: '0 auto'}}>
         <ul
           style={{
             display: `flex`,

@@ -16,7 +16,7 @@ const Layout = ({ title, children }) => {
   return (
     <div>
       <header style={{backgroundColor: '#282c34', color: '#ffffff'}}>
-        <div className="container" style={{ padding: '1.5rem', maxWidth: '1200px', margin: '0 auto'}}>
+        <div className="container" style={{ padding: '1.5rem', maxWidth: '1260px', margin: '0 auto'}}>
           <Link
             style={{
               boxShadow: `none`,

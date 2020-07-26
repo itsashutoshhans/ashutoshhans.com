@@ -1,0 +1,26 @@
+.bio {
+  
+  h1,h3 {
+    color: inherit;
+    border: none
+  }
+  
+  h1 span.name {
+    color: #ffffff;
+    cursor: pointer;
+    padding: 7px;
+    
+
+    &:hover{
+      background-color: #373940;
+    }
+  }
+
+  .container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+}
