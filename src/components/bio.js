@@ -45,7 +45,7 @@ const Bio = () => {
       }}
     >
       <div className="container">
-        <h1>Hi I'am <span className="name">{author.name}</span></h1>
+        <h1>Hi I'm <span className="name">{author.name}</span></h1>
         <h3>Software Engineer | Guitarist | Yoga Practitioner</h3>
         <p>
           This website is my digital space for taking notes on what I learn about
