@@ -4,7 +4,7 @@ import Github from "typography-theme-github"
 
 Github.bodyColor = '#000000';
 
-const typography = new Typography(Github)
+const typography = new Typography(Wordpress2016)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

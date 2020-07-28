@@ -15,7 +15,7 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="All posts" />
       <Bio />
       <section>
-        <div className="container" style={{maxWidth: '1260px', margin: '0 auto', padding: '1.5rem'}}>
+        <div className="container" style={{maxWidth: '800px', margin: '0 auto', padding: '1.5rem'}}>
           <h2>Recent Posts</h2>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug

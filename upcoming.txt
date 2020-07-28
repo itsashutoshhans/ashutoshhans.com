@@ -1,0 +1,9 @@
+React.lazy
+profiler
+cancel pending requests react how to ? 
+
+
+why react ? 
+ simply hard stuff
+ performance - time slicing
+ developer tooling
