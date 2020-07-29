@@ -49,9 +49,9 @@ const Bio = () => {
         <h3>Software Engineer | Guitarist | Yoga Practitioner</h3>
         <p>
           This website is my digital space for taking notes on what I learn about
-          technology and life, written with the intention to help myself with the
-          quick source to refer to at any point of time and may be if these notes
-          can help someone in some way. {` `}
+          technology and life, written with the intent to help me have a
+          quick source of reference at any point in time and may be if these notes
+          can help any in some way. {` `}
         </p>
       </div>
     </div>
