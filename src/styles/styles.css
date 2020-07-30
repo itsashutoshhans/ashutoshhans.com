@@ -8,11 +8,11 @@ h6 {
   margin: 0 0 1.5rem 0;
 }
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   ol,ul {
     padding: 0 2rem;
   }
-}
+} */
 
 .container {
   max-width: 800px;

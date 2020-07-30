@@ -8,7 +8,7 @@ import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.allMarkdownRemark.edges.filter(({node}) => node.frontmatter.draft !== null ? false : true);
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -70,6 +70,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            draft
           }
         }
       }
