@@ -22,15 +22,31 @@ Read more in detail: []()
 > TODO: What is wrapper hell ?
 
 
+## What is a hook ? 
+- Hooks are functions that let's you "hook into" React state and lifecycle features from function components
+- Hooks don't work inside classes
+
 ## useState
+- `useState` hook is called inside a function component to add some local state to it
+- State is preserved between re-renders
+- returns a pair: the current state value and a function that lets to update it
 (stateValue, setterFunction) function allows to the state value
 multiple times for multiple values
+- The only argument to `useState` is initial state (this state argument is used only during the first render and it doesn't have to been an object)
+- The different names given to the state variable aren't a part of the `useState`.
+- React assumes that if you call `useState` many time, you do it in the same order during every render
 
 ## useContext
 
-## useEffect (sideEffects)
-componentDidMount
-componentDidUpdate
+## useEffect
+we've likey used data fetching, subscriptions, or manually changing the DOM from React Components. These operations are called **side effects** because they can affect other components and can't be done during rendering
+
+- `useEffect` hook adds the ability to perform side effects from a function component
+- Serves same purpose as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount` in React classes, but unified into a single API
+- `useEffect` function is run after flushing changes to the DOM
+- By default, React runs the effects after every render
+- Can be used more than once
+- Let's you organize side effects in a component by what pieces are related
 
 ## Subsriptions (browser api, window resize extra)
 
