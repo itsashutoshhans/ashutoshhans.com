@@ -23,3 +23,6 @@ Doesn't work on object literals https://medium.com/@juanlizarazo/how-to-spy-on-a
 
 # spy a method call in constructor
 https://stackoverflow.com/questions/8733978/jasmine-spying-on-a-method-call-within-a-constructor
+
+# done is not defined
+https://stackoverflow.com/questions/30484218/jasmin-spy-listens-on-ajax-cannot-read-property-done-of-undefined

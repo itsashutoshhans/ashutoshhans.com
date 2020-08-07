@@ -21,7 +21,6 @@ Read more in detail: []()
 
 > TODO: What is wrapper hell ?
 
-
 ## What is a hook ? 
 - Hooks are functions that let's you "hook into" React state and lifecycle features from function components
 - Hooks don't work inside classes
@@ -36,9 +35,7 @@ multiple times for multiple values
 - The different names given to the state variable aren't a part of the `useState`.
 - React assumes that if you call `useState` many time, you do it in the same order during every render
 
-## useContext
-
-## useEffect
+## useEffect {#effects-without-cleanup}
 we've likey used data fetching, subscriptions, or manually changing the DOM from React Components. These operations are called **side effects** because they can affect other components and can't be done during rendering
 
 - `useEffect` hook adds the ability to perform side effects from a function component
@@ -47,6 +44,24 @@ we've likey used data fetching, subscriptions, or manually changing the DOM from
 - By default, React runs the effects after every render
 - Can be used more than once
 - Let's you organize side effects in a component by what pieces are related
+- Prevents duplicate code (example: if you want to do same thing after `componentDidMount` and `componentDidUpdate`)
+
+Function passed to `useEffect` is going to be different on every render. This let's React read the state value from inside the effect without worrying about getting it stale. 
+
+### Effects with Clean up
+- If your effect returns a function, React will run it when it is clean up
+- This lets us keep the related logic close to each other
+- Return function is optional
+- Effects run for every render before running the effects next time. This is why React also cleans up effects from the previos render before running the effects next time.
+
+> TODO:  https://reactjs.org/docs/hooks-effect.html#tips-for-using-effects
+
+## How React knows which component useState corresponds to ?
+https://reactjs.org/docs/hooks-faq.html#how-does-react-associate-hook-calls-with-components
+
+
+> Hooks names always start with `use`
+
 
 ## Subsriptions (browser api, window resize extra)
 
