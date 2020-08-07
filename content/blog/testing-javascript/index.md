@@ -1,9 +1,8 @@
 ---
 title: testing in javascript
 date: "2020-08-03T11:39:08.613Z"
-draft: true
 ---
-# why tests? 
+# Why tests? 
 
 # it / test
 test(name, fn, timeout) - a simple that defines / runs your test
