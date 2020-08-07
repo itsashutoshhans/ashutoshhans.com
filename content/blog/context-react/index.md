@@ -2,6 +2,7 @@
 title: Context Api in React
 date: "2020-08-07T13:55:06.985Z"
 ---
+*In Progress*
 
 Context provides a way to pass data through the component tree without having to pass props down manually at every level.
 

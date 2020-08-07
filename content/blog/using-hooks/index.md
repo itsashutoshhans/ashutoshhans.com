@@ -2,6 +2,8 @@
 title: using hooks in React
 date: 2020-07-28T17:45:55.354Z
 ---
+*In Progress*
+
 
 Hooks are new addition in React 16.8 which lets us use state and other React features without the need of writing a class.
 
