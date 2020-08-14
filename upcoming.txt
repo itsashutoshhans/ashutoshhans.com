@@ -7,3 +7,10 @@ why react ?
  simply hard stuff
  performance - time slicing
  developer tooling
+
+ sticky footer:
+ https://css-tricks.com/couple-takes-sticky-footer/
+
+ service layer in react:
+ https://blog-english.vedovelli.com.br/frontend-service-layer-axios-ajax-interceptors-vuejs-vuex/
+ 

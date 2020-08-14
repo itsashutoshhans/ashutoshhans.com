@@ -73,3 +73,8 @@ class MyClass extends React.Component {
 ```
 A React component that subssribes to context changes.
 All the rules of context mentioned above are applicable (value = value prop on closest provider, uses `defaultValue` if there is no provider...)
+
+
+## Context.displayName
+
+Context object accepts `displayName` as a property. React Dev tools uses this string to determine what to display for the context.
