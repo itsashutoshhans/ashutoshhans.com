@@ -20,4 +20,9 @@ body {
 .container {
   max-width: 1260px;
   padding: 1.5rem;
+
+  .section-heading {
+    display: inline-block;
+    border-bottom: 1px solid #ea4c89;
+  }
 }

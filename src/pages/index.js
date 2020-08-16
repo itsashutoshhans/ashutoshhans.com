@@ -16,8 +16,8 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       <section>
         <div className="container" style={{margin: '0 auto', padding: '1.5rem'}}>
-        <p style={{backgroundColor: '#ffbc00'}}><b>Note:</b> Work in progress...</p>
-          <h2 style={{marginBottom: '2rem'}}>Recent Posts</h2>
+        <p style={{backgroundColor: '#f2d184', color: '#866118', borderLeft: '3px solid #866118', paddingLeft: '5px'}}><b>Note:</b> Work in progress...</p>
+          <h2 className="section-heading" style={{marginBottom: '2rem'}}>Recent Posts</h2>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
