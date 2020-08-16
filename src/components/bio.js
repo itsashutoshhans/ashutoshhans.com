@@ -40,7 +40,7 @@ const Bio = () => {
     <div className="bio">
       <div className="container">
         <h1>
-          Hi I am <span className="name">{author.name}</span>
+          Hi I am <span>{author.name}</span>
         </h1>
         <p className="info">Software Engineer | Guitarist | Yoga Practitioner</p>
         <p>
