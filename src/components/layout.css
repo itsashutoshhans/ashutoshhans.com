@@ -1,3 +1,7 @@
 header .container a{
   color  :#ffffff;
 }
+
+header {
+  border-bottom: 2px solid #ffff00;
+}

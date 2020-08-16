@@ -17,3 +17,6 @@ https://www.digitalocean.com/community/tutorials/react-live-search-with-axios
 
 ## Render react elements in specified order
 https://stackoverflow.com/questions/48195446/rendering-react-components-in-a-specified-order
+
+## Text should take up next line in case of overflow
+https://css-tricks.com/almanac/properties/o/overflow-wrap/
