@@ -1,0 +1,25 @@
+.blog-post-item {
+  padding: 1rem;
+  border-bottom: 1px solid #e7e7e9;
+
+  a {
+    color: #333;
+  }
+
+  h3 {
+    margin-top: 0;
+
+    &:hover {
+      color: #d0021b;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

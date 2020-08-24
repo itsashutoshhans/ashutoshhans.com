@@ -5,42 +5,59 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import "../styles/index.scss"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges.filter(({node}) => node.frontmatter.draft !== null ? false : true);
+  const posts = data.allMarkdownRemark.edges.filter(({ node }) =>
+    node.frontmatter.draft !== null ? false : true
+  )
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
       <section>
-        <div className="container" style={{margin: '0 auto', padding: '1.5rem'}}>
-        <p style={{backgroundColor: '#f2d184', color: '#866118', borderLeft: '3px solid #866118', paddingLeft: '5px'}}><b>Note:</b> Work in progress...</p>
-          <h2 className="section-heading" style={{marginBottom: '2rem'}}>Recent Posts</h2>
+        <div
+          className="container"
+          style={{ margin: "0 auto", padding: "1.5rem" }}
+        >
+          <p
+            style={{
+              backgroundColor: "#f2d184",
+              color: "#866118",
+              borderLeft: "3px solid #866118",
+              paddingLeft: "5px",
+            }}
+          >
+            <b>Note:</b> Work in progress...
+          </p>
+          <h2 className="section-heading" style={{ marginBottom: "2rem" }}>
+            Recent Posts
+          </h2>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
-              <article key={node.fields.slug}>
-                <header>
-                  <h3
-                    style={{
-                      marginBottom: rhythm(1 / 4),
-                    }}
-                  >
-                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <article key={node.fields.slug} className="blog-post-item">
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  <header>
+                    <h3
+                      style={{
+                        marginBottom: rhythm(1 / 4),
+                      }}
+                    >
                       {title}
-                    </Link>
-                  </h3>
-                  <small>{node.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description || node.excerpt,
-                    }}
-                  />
-                </section>
+                    </h3>
+                    <small>{node.frontmatter.date}</small>
+                  </header>
+                  <section>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: node.frontmatter.description || node.excerpt,
+                      }}
+                    />
+                  </section>
+                </Link>
               </article>
             )
           })}
