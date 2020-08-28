@@ -5,28 +5,17 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 2rem;
   border: none;
+  font-weight: 500;
 }
 
-/* @media screen and (min-width: 800px) {
-  ol,ul {
-    padding: 0 2rem;
+body, html {
+  height: 100%;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
   }
-} */
-body {
-  color: #333;
-}
-
-.container {
-  max-width: 1260px;
-  padding: 1.5rem;
-
-  .section-heading {
-    display: inline-block;
-    border-bottom: 1px solid #c6415c;
-  }
-}
-
-blockquote {
-  font-style: italic;
 }

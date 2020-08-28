@@ -1,12 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `home`,
+    title: `ashutoshhans`,
     author: {
       name: `Ashutosh Hans`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `this website is my digital space to make notes about tech and life.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A blog about tech and life.`,
+    siteUrl: `https://ashutoshhans.com/`,
     social: {
       twitter: `kylemathews`,
     },

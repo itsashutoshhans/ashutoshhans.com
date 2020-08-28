@@ -8,7 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
-import "./bio.scss"
+
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
@@ -37,19 +37,32 @@ const Bio = () => {
 
   const { author, social } = data.site.siteMetadata
   return (
-    <div className="bio">
-      <div className="container">
-        <h1>
-          Hi I am <span>{author.name}</span>
-        </h1>
-        <p className="info">Software Engineer | Guitarist | Yoga Practitioner</p>
-        <p>
-          This website is my digital space for taking notes on what I learn
-          about technology and life, written with the intent to help me have a
-          quick source of reference at any point in time and may be if these
-          notes can help anyone in some way. {` `}
-        </p>
-      </div>
+    <div
+      style={{
+        display: `flex`,
+        marginBottom: '1rem',
+      }}
+    >
+      <Image
+        fixed={data.avatar.childImageSharp.fixed}
+        alt={author.name}
+        style={{
+          marginRight: rhythm(1 / 2),
+          marginBottom: 0,
+          minWidth: 50,
+          borderRadius: `100%`,
+        }}
+        imgStyle={{
+          borderRadius: `50%`,
+        }}
+      />
+      <p>
+        Hi I am <strong>{author.name}</strong> and {author.summary}
+        {` `}
+        {/* <a href={`https://twitter.com/${social.twitter}`}>
+          You should follow him on Twitter
+        </a> */}
+      </p>
     </div>
   )
 }

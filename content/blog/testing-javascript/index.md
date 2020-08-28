@@ -1,9 +1,9 @@
 ---
-title: testing in javascript
+title: Testing in javascript
 date: "2020-08-03T11:39:08.613Z"
 ---
 
-*In Progess*
+__In Progess__
 
 
 # Why tests? 

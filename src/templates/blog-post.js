@@ -17,11 +17,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <article style={{padding: '1.5rem', maxWidth: '1260px', margin: '0 auto', marginTop: '70px'}}>
+      <article className="container">
         <header>
           <h1
             style={{
-              marginTop: rhythm(1),
               marginBottom: 0,
             }}
           >

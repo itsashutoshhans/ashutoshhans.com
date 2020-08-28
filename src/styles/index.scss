@@ -1,26 +1,17 @@
 .blog-post-item {
-  padding: 1rem;
+  padding: 0.5rem 0 ;
   border-bottom: 1px solid #e7e7e9;
-  border-radius: 8px;
-
-  a {
-    color: #333;
-  }
-
-  h3 {
-    margin-top: 0;
-
-    &:hover {
-      color: #d0021b;
-    }
-  }
 
   &:hover {
-    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 
     a {
       text-decoration: none;
     }
   }
+}
+
+.section-heading {
+  display: inline-block;
+  border-bottom: 1px solid #d23669;
 }

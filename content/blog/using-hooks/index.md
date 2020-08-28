@@ -1,5 +1,5 @@
 ---
-title: using hooks in React
+title: Using hooks in React
 date: 2020-07-28T17:45:55.354Z
 ---
 *In Progress*

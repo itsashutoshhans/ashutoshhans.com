@@ -1,5 +1,5 @@
 ---
-title: some quick notes (how tos) to be converted to posts later
+title: Some quick notes (how tos / posts ideas)
 date: "2020-08-12T07:01:51.135Z"
 ---
 

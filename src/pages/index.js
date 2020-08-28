@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -18,11 +17,8 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="All posts" />
       <Bio />
       <section>
-        <div
-          className="container"
-          style={{ margin: "0 auto", padding: "1.5rem" }}
-        >
-          <p
+        <div className="container" style={{ margin: "0 auto" }}>
+          {/* <p
             style={{
               backgroundColor: "#f2d184",
               color: "#866118",
@@ -31,33 +27,33 @@ const BlogIndex = ({ data, location }) => {
             }}
           >
             <b>Note:</b> Work in progress...
-          </p>
-          <h2 className="section-heading" style={{ marginBottom: "2rem" }}>
-            Recent Posts
-          </h2>
+          </p> */}
+          <h2 className="section-heading">Recent Posts</h2>
           {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
               <article key={node.fields.slug} className="blog-post-item">
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  <header>
-                    <h3
-                      style={{
-                        marginBottom: rhythm(1 / 4),
-                      }}
-                    >
+                <header>
+                  <h3 className="post-title"
+                    style={{
+                      marginBottom: rhythm(1 / 4),
+                    }}
+                  >
+                    <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                       {title}
-                    </h3>
+                    </Link>
+                  </h3>
+                  <div className="post-date">
                     <small>{node.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: node.frontmatter.description || node.excerpt,
-                      }}
-                    />
-                  </section>
-                </Link>
+                  </div>
+                </header>
+                <section>
+                  {/* <p
+                    dangerouslySetInnerHTML={{
+                      __html: node.frontmatter.description
+                    }}
+                  /> */}
+                </section>
               </article>
             )
           })}
