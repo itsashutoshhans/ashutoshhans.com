@@ -16,4 +16,6 @@ My day to day work invloves solving UI challenges with large data and making per
 ## Insipirations
 - Tania Rascia
 - Dribble blog
+- https://maggieappleton.com/
+- https://overreacted.io/
 
