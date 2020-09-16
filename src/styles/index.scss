@@ -2,9 +2,14 @@
   padding: 0.5rem 0;
   border-bottom: 1px solid #e7e7e9;
   
-  a {
-    box-shadow: none;
+  .post-title {
+    font-weight: 400;
+    a {
+      color: var(--font-color);
+      box-shadow: none;
+    }
   }
+
 
   &:hover {
     cursor: pointer;
@@ -17,5 +22,15 @@
 
 .section-heading {
   display: inline-block;
-  border-bottom: 0.1rem solid #d23669;
+  // border-bottom: 0.1rem solid #d23669;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 60px;
+    padding-top: 0.5rem;
+    border-bottom-style: solid;
+    border-bottom-width: 4px;
+    border-bottom-color: var(--primary-color-darker);
+  }
 }

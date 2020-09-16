@@ -4,25 +4,34 @@ date: "2020-08-21T08:45:57.559Z"
 ---
 
 ## TDD (Test Driven Development)
+Below are the steps or basic building blocks of TDD:
 - Write test before even writing the code
-- Write shell version of the code (enough of the fn to be able to call but fn won't do anything)
-- write test, it will fail.. red part of red green testing
-- once test is failing.. write code to make it pass
+- Write shell version of the code (enough of the function to be able to call but function won't do anything)
+- Write test, it will fail. And that is red part of red green testing
+- Once the tests are failing, write code to make it pass
 
-## why ?
-- time and effort for manual.. and repeat if they fail
-- no additional efforts after code change
-- better code, better organized (plan before you code)
-- more testable ( writing with view of test,.. u won't write untestable code)
-- fewer bugs, (caught  sooner, regression)
-- great coverage (shouldn't be entire goal)
-
-Watch mode watches the changes and re runs the test based on any changes in the code
-
-by dafault, jest looks for .test.js files
+## Why ?
+- There is a lot time and effort required for manual testing and we have to repeat whole process if they fail
+- No additional efforts after code change when we to it by TDD
+- Better code, better organized (because we already plan before you code)
+- More testable (while writing with view of test you won't write untestable code)
+- fewer bugs (caught sooner if there are regressions)
+- great coverage (but only this shouldn't be entire goal)
 
 
-## Enzyme 
+## What is Jest ?
+Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+Read more on https://jestjs.io/.  
+It comes by default with `create-react-app`.
+
+### Watch mode
+Watch mode watches the changes and re runs the test based on any changes in the code.
+By dafault, jest looks for .test.js files
+
+## Enzyme Introduction and set up
+Enzyme is a JavaScript Testing utility for React that makes it easier to test your React Components' output. You can also manipulate, traverse, and in some ways simulate runtime given the output.
+
+Enzyme's API is meant to be intuitive and flexible by mimicking jQuery's API for DOM manipulation and traversal.
 - Creates a virtual DOM for testing
 - Allows testing without a browser (React DOM under the hood)
 - Has a very good toolkit
@@ -31,10 +40,11 @@ by dafault, jest looks for .test.js files
   - Simulate simple events
 - Access to props and states
 
-install 3 packages, dev dependencies
+### Installation
+Install 3 packages as dev dependencies  
 `npm i --save-dev enzyme jest-enzyme enzyme-adapter-react-16`
 
-### set up
+### Set up
 
 ```js
 import Enzyme from 'enzyme'
@@ -43,6 +53,9 @@ import EnzymeAdapter from 'enzyme-adapter-react-16';
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 ```
+
+
+
 
 ## Types of tests
 - Unit tests
@@ -63,6 +76,7 @@ Enzyme.configure({ adapter: new EnzymeAdapter() });
 - Sometimes optimize for easy to diagnose
 - Sometimes optimize for less brittle tests
 - Find balance
+
 
 # Snapshot testing
 
