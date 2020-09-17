@@ -16,7 +16,7 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          marginBottom: '1.75rem',
+          marginBottom: '0.8125rem',
           marginTop: 0,
         }}
       >
@@ -35,8 +35,10 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h3
         style={{
+          paddinTop: '5px',
           fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
+          marginBottom: '1rem'
         }}
       >
         <Link
