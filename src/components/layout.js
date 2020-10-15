@@ -77,7 +77,8 @@ const Layout = ({ location, title, children }) => {
       <footer style={{marginTop: '4.375rem', padding: '1.75rem 0'}}>
        Built with
         {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <a href="https://www.gatsbyjs.org">Gatsby</a> {` | `}
+        <a href="https://ko-fi.com/ashutoshhans">Support</a>
       </footer>
     </div>
   )

@@ -50,7 +50,7 @@ const BlogIndex = ({ data, location }) => {
                 <section>
                   {/* <p
                     dangerouslySetInnerHTML={{
-                      __html: node.frontmatter.description
+                      __html: node.frontmatter.description || node.excerpt
                     }}
                   /> */}
                 </section>
