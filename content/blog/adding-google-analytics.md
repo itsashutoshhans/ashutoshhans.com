@@ -50,9 +50,18 @@ To set up a Google analytics account go [here](http://analytics.google.com).
 If you don’t have an account, you can create one by clicking the link for "Create Account."
 Proceed by signing up.
 
-![google analytics sign in](../assets/google-sign-in.JPG)
+![google analytics sign in](..\assets\google-sign-in.JPG)
 
 ### Account set up
 Once you have signed in, you will be presented with an account creation screen.
 
-![account creation](../assets/account-creation.jpg)
+![account creation](..\assets\account-creation.jpg)
+
+### What do you want to measure ?
+Google analytics will ask you next whether you want to measure a website, a mobile app, or both.
+Select the desired option and click next.
+
+![measurement options](..\assets\measurement-options.jpg)
+
+### Property setup
+You can set up your property by entering your website details. You can also select your industry category. This helps Google Analytics build better reports and education that are tailored for your industry.
