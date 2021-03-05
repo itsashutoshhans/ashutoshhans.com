@@ -2,11 +2,11 @@
 2. polyfill for Array.isArray
 3. Ways to create object
 4. instantiate object without new
-5. call bind
+5. call, bind and function borrowing
 6. difference between map and forEach
 7. map polyfill
 8. spread operator
-9. arr[-1] = 2, arr[6] = 2.... what will the output ? 
+9. arr[-1] = 2, arr[6] = 2.... what will the output when the arr=[1,2,3]? 
 10. debounce polyfill
 11. flattenObject
 12. flattenArray
@@ -15,6 +15,7 @@
 15. prototype / constructor related quesions
 16. async await vs promises
 17. Event loop
+18. Hoisting related questions (shadowing and passing arguments to local functions) + temporal dead zone
 
 
 -----------------------------------------------------
