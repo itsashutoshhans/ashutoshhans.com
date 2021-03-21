@@ -16,15 +16,34 @@
 16. async await vs promises
 17. Event loop
 18. Hoisting related questions (shadowing and passing arguments to local functions) + temporal dead zone
+19. onClick timeout with useState
+20. if we pass function as prop and object as a prop will it rerender
+21. implement you own redux
+22. how react works ? 
+23. What are memory leaks ?
+24. Are global variables garbage collected ? 
+25. What is UTF-8 ? 
+26. css cards and container
+27. How browser works
+28. Things to take care for developing mobile
 
 
 -----------------------------------------------------
 Ds Algo
 1. convert to mirror tree
 2. sorted 2d matrix, return number of zeroes
+3. Valid paranthesis
+4. Can the string be made palidrome by deleting atmost 1 character
+5. Valid Anagrams (Amazon)
 
 
 -----------------------------------------------------
 React
 
 1. useEffect -> null, undefined dependencies effect
+
+------------------------------------------------------
+Design
+
+1. Document store
+2. Given 6 apis to be called in the start of the page, how will structure or design
