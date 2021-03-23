@@ -26,6 +26,9 @@
 26. css cards and container
 27. How browser works
 28. Things to take care for developing mobile
+29. Polyfill of promise.all
+30. compose(square, addTen)(20) => 900
+
 
 
 -----------------------------------------------------
@@ -35,6 +38,7 @@ Ds Algo
 3. Valid paranthesis
 4. Can the string be made palidrome by deleting atmost 1 character
 5. Valid Anagrams (Amazon)
+6. Given three arrays, find the common elements in them
 
 
 -----------------------------------------------------
