@@ -9,7 +9,9 @@ import "../styles/index.scss"
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges.filter(({ node }) =>
-    node.frontmatter.draft !== null ? false : true
+    node.frontmatter.draft !== null || node.frontmatter.title === "About me"
+      ? false
+      : true
   )
 
   return (
@@ -34,14 +36,13 @@ const BlogIndex = ({ data, location }) => {
             return (
               <article key={node.fields.slug} className="blog-post-item">
                 <header>
-                  <h3 className="post-title"
+                  <h3
+                    className="post-title"
                     style={{
                       marginBottom: rhythm(1 / 4),
                     }}
                   >
-                    <Link to={node.fields.slug}>
-                      {title}
-                    </Link>
+                    <Link to={node.fields.slug}>{title}</Link>
                   </h3>
                   <div className="post-date">
                     <small>{node.frontmatter.date}</small>

@@ -16,7 +16,7 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h1
         style={{
-          marginBottom: '0.8125rem',
+          marginBottom: "0.8125rem",
           marginTop: 0,
         }}
       >
@@ -35,10 +35,10 @@ const Layout = ({ location, title, children }) => {
     header = (
       <h3
         style={{
-          paddinTop: '5px',
+          paddinTop: "5px",
           fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
-          marginBottom: '1rem'
+          marginBottom: "1rem",
         }}
       >
         <Link
@@ -60,26 +60,25 @@ const Layout = ({ location, title, children }) => {
         marginRight: `auto`,
         maxWidth: rhythm(24),
         padding: `0 1.5rem`,
-        height: '100%',
+        height: "100%",
       }}
     >
       <header className="main-header">
         {header}
         <div className="nav">
-          <ul style={{ listStyle: "none"}}>
+          <ul style={{ listStyle: "none" }}>
             <ListLink to="/about/">About</ListLink>
             <ListLink to="/notes/">Notes</ListLink>
           </ul>
         </div>
-        
       </header>
       <main>{children}</main>
-      <footer style={{marginTop: '4.375rem', padding: '1.75rem 0'}}>
+      {/* <footer style={{marginTop: '4.375rem', padding: '1.75rem 0'}}>
        Built with
         {` `}
         <a href="https://www.gatsbyjs.org">Gatsby</a> {` | `}
         <a href="https://ko-fi.com/ashutoshhans">Support</a>
-      </footer>
+      </footer> */}
     </div>
   )
 }

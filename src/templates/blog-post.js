@@ -47,7 +47,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </footer> */}
       </article>
 
-      <nav className="container" style={{margin: '0 auto'}}>
+      <nav className="container" style={{ margin: "0 auto" }}>
         <ul
           style={{
             display: `flex`,
@@ -55,6 +55,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             justifyContent: `space-between`,
             listStyle: `none`,
             padding: 0,
+            margin: 0,
           }}
         >
           <li>
