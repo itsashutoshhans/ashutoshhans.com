@@ -37,8 +37,8 @@ Constraints:
 - 0 <= nums[i] < nums.length
 - All the values of nums are unique.
 
-Solution:
-
+Solution 1:
+Using Set.
 Time Complexity: O(n)   
 Space Complexity: O(n)
 
@@ -76,5 +76,38 @@ var arrayNesting = function(nums) {
   return max;
 };
 ```
+Solution 2: 
+
+In place modification.
+Time: O(n)
+Space: O(1)
+
+```js
+var arrayNesting = function(nums) {
+    
+    // instead of using visited set we can modify the visited element in place (making it null) to identify that we have already visited this element
+    
+    let res = 0;
+    for(let i = 0; i < nums.length; i++){
+        let val = nums[i];
+        let count = 0;
+        
+        // check if nums[val] is already visited, if not then proceed
+        while(nums[val] != null){
+            count++;
+            const temp = val;
+            val = nums[val];
+            
+            // mark the next value as visited
+            nums[temp] = null;
+        }
+                   
+        res = Math.max(res,count)
+    }
+    
+    return res;
+};
+```
+
 Related Topics:
 Array, DFS
