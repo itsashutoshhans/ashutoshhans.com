@@ -49,7 +49,7 @@ var arrayNesting = function(nums) {
   
   // Keep updating the length of the path, the longest one is the answer
   // Note: We don't start with the element if it is already there in the visited
-  // Why? Because it was already there in some path, starting the path from this particular element again will 
+  // Why? Because it was already there in some path earlier and thus starting the path from this particular element again will 
   // definitely give smaller path than it was already seen in
   
   const visited = new Set();
